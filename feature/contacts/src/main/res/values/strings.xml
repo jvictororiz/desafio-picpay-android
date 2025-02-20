@@ -1,0 +1,7 @@
+<resources>
+    <string name="content_description_contact">Imagem contato</string>
+    <string name="connection_error">Sem conexão com a internet, por favor, conecte-se e tente novamente.</string>
+    <string name="default_error">Falha ao buscar usuários, por favor, tente novamente mais tarde.</string>
+    <string name="contacts">Contatos</string>
+    <string name="last_update">Atualizado: %s</string>
+</resources>
