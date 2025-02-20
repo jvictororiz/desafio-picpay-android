@@ -10,12 +10,11 @@ import androidx.compose.ui.res.painterResource
 import coil.compose.AsyncImage
 
 @Composable
-fun PicpayCachedImage(
+fun CachedImage(
     modifier: Modifier = Modifier,
     url: String, contentDescription: String,
     @DrawableRes drawableError: Int
 ) {
-
     if (url.isEmpty()) {
         Image(
             modifier = modifier,

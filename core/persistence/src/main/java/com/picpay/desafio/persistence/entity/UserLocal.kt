@@ -1,4 +1,4 @@
-package com.picpay.desafio.persistence.room.entity
+package com.picpay.desafio.persistence.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

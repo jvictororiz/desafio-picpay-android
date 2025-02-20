@@ -1,7 +1,7 @@
 package com.picpay.desafio.contacts.data.datasource.local
 
-import com.picpay.desafio.persistence.room.dao.UserDao
-import com.picpay.desafio.persistence.room.entity.UserLocal
+import com.picpay.desafio.persistence.dao.UserDao
+import com.picpay.desafio.persistence.entity.UserLocal
 
 
 internal class UserLocalDataSourceImpl(

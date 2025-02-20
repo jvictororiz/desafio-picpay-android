@@ -6,7 +6,7 @@ import com.picpay.desafio.common.exception.NetworkConnectionException
 import com.picpay.desafio.common.extension.toText
 import com.picpay.desafio.common.model.Cacheable
 import com.picpay.desafio.common.model.dispatcher.DispatcherProvider
-import com.picpay.desafio.common.viewModel.BaseViewModel
+import com.picpay.desafio.common.base.BaseViewModel
 import com.picpay.desafio.contacts.R
 import com.picpay.desafio.contacts.domain.model.User
 import com.picpay.desafio.contacts.domain.usecase.UserUseCase

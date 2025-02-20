@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -19,12 +18,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.picpay.desafio.contacts.R
 import com.picpay.desafio.contacts.ui.component.ContactItem
 import com.picpay.desafio.contacts.ui.viewModel.model.ContactUi
 import com.picpay.desafio.contacts.ui.viewModel.model.ContactsUiState
 import com.picpay.desafio.designsystem.component.LoadingBox
+import com.picpay.desafio.designsystem.theme.Dimensions
 import com.picpay.desafio.designsystem.theme.PicpayTheme
 import kotlinx.coroutines.launch
 
@@ -60,9 +59,9 @@ internal fun ContactsScreen(
                     item {
                         Text(
                             modifier = Modifier.padding(
-                                top = 48.dp,
-                                start = 24.dp,
-                                bottom = if (uiState.isCache) 0.dp else 32.dp
+                                top = Dimensions.huge,
+                                start = Dimensions.xlarge,
+                                bottom = if (uiState.isCache) Dimensions.none else Dimensions.xxlarge
                             ),
                             text = stringResource(R.string.contacts),
                             style = MaterialTheme.typography.titleLarge.copy(color = MaterialTheme.colorScheme.onSurface)
@@ -73,7 +72,11 @@ internal fun ContactsScreen(
                         item {
                             Text(
                                 modifier = Modifier
-                                    .padding(start = 24.dp, top = 16.dp, bottom = 32.dp),
+                                    .padding(
+                                        start = Dimensions.xlarge,
+                                        top = Dimensions.large,
+                                        bottom = Dimensions.xxlarge
+                                    ),
                                 text = uiState.dateLastModification,
                                 style = MaterialTheme.typography.bodySmall.copy(
                                     color = MaterialTheme.colorScheme.onSurface.copy(
@@ -88,12 +91,12 @@ internal fun ContactsScreen(
                         val item = uiState.listContacts[index]
                         ContactItem(
                             modifier = Modifier
-                                .padding(start = 24.dp)
+                                .padding(start = Dimensions.xlarge)
                                 .fillParentMaxWidth(),
                             contact = item
                         )
                         Spacer(
-                            modifier = Modifier.height(16.dp)
+                            modifier = Modifier.height(Dimensions.large)
                         )
                     }
                 }

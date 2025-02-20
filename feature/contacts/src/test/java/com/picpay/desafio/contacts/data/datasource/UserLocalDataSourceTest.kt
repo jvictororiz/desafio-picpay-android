@@ -3,8 +3,8 @@ package com.picpay.desafio.contacts.data.datasource
 
 import com.picpay.desafio.contacts.data.datasource.local.UserLocalDataSource
 import com.picpay.desafio.contacts.data.datasource.local.UserLocalDataSourceImpl
-import com.picpay.desafio.persistence.room.dao.UserDao
-import com.picpay.desafio.persistence.room.entity.UserLocal
+import com.picpay.desafio.persistence.dao.UserDao
+import com.picpay.desafio.persistence.entity.UserLocal
 import io.mockk.coVerify
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest

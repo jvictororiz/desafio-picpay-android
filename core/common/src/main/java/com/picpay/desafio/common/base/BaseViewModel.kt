@@ -1,4 +1,4 @@
-package com.picpay.desafio.common.viewModel
+package com.picpay.desafio.common.base
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

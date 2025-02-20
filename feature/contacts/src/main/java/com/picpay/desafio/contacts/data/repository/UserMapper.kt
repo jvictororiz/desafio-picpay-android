@@ -2,7 +2,7 @@ package com.picpay.desafio.contacts.data.repository
 
 import com.picpay.desafio.contacts.data.model.UserRemote
 import com.picpay.desafio.contacts.domain.model.User
-import com.picpay.desafio.persistence.room.entity.UserLocal
+import com.picpay.desafio.persistence.entity.UserLocal
 
 
 internal fun UserRemote.toDomain() = User(
@@ -23,5 +23,5 @@ fun User.toLocal() = UserLocal(
     image = image,
     name = name,
     id = id,
-    username = username
+    username = username,
 )

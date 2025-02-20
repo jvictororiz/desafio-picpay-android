@@ -1,9 +1,9 @@
-package com.picpay.desafio.persistence.room.dao
+package com.picpay.desafio.persistence.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.picpay.desafio.persistence.room.entity.UserLocal
+import com.picpay.desafio.persistence.entity.UserLocal
 
 @Dao
 interface UserDao {

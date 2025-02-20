@@ -6,7 +6,7 @@ import com.picpay.desafio.contacts.data.datasource.local.UserLocalDataSource
 import com.picpay.desafio.contacts.data.datasource.remote.UserRemoteDataSource
 import com.picpay.desafio.contacts.data.model.UserRemote
 import com.picpay.desafio.contacts.domain.repository.UserRepository
-import com.picpay.desafio.persistence.room.entity.UserLocal
+import com.picpay.desafio.persistence.entity.UserLocal
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
